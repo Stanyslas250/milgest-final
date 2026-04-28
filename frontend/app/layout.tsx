@@ -13,9 +13,27 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Milgest",
+  title: {
+    default: "Milgest — Gestion de militants",
+    template: "%s | Milgest",
+  },
   description:
-    "Milgest est un ERP de gestion de militants conçu pour les organisations politiques, associations et ONG.",
+    "Centralisez la gestion de vos membres, cotisations, grades et documents. L'ERP conçu pour les organisations politiques, associations et ONG.",
+  keywords: [
+    "gestion militants",
+    "ERP association",
+    "gestion membres",
+    "cotisations",
+    "organisation politique",
+    "ONG",
+  ],
+  openGraph: {
+    title: "Milgest — Gestion de militants",
+    description:
+      "Centralisez la gestion de vos membres, cotisations, grades et documents.",
+    type: "website",
+    locale: "fr_FR",
+  },
 };
 
 export default function RootLayout({
